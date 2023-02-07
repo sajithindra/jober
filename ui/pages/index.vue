@@ -1,8 +1,9 @@
 <template>
-    <div class="grid grid-cols-2 gap-2">
-        <div>01</div>
-        <div>02</div>
-    </div>
+ <login/>
 </template>
-<script setup>
+
+<script>
+export default {
+  name: 'IndexPage'
+}
 </script>
