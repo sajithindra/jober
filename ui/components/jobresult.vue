@@ -1,6 +1,7 @@
 <template>
-    <Jobsearch/>
+   <v-container style="width: 50%;">
     
+   </v-container>
 </template>
 
 <script setup>

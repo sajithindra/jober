@@ -3,26 +3,26 @@
             <h2 class="p-5 text-center text-indigo-600 font-sans text-2xl font-bold"> Candidate Registraion</h2>
             <v-row >
                 <v-col>
-                    <v-text-field label="Full Name" v-model="name" :rules="[rules.required]"></v-text-field>
+                    <v-text-field label="Full Name" v-model="name" :rules="[rules.required]" variant="underlined"></v-text-field>
                 </v-col>
                 <v-col>
-                    <v-text-field label="Mobile" v-model="mobile" :rules="[rules.required]"></v-text-field>
-                </v-col>
-            </v-row>
-            <v-row>
-                <v-col>
-                    <v-text-field label="Email" v-model="email" :rules="[rules.required]"></v-text-field>
-                </v-col>
-                <v-col>
-                    <v-text-field label="Password" v-model="password" type="password" :rules="[rules.required]"></v-text-field>
+                    <v-text-field label="Mobile" v-model="mobile" :rules="[rules.required]" variant="underlined"></v-text-field>
                 </v-col>
             </v-row>
             <v-row>
                 <v-col>
-                    <v-text-field label="Aadhaar" v-model="aadhaar" :rules="[rules.required]"></v-text-field>
+                    <v-text-field label="Email" v-model="email" :rules="[rules.required]" variant="underlined"></v-text-field>
                 </v-col>
                 <v-col>
-                    <v-text-field label="PAN" v-model="pan" :rules="[rules.required]"></v-text-field>
+                    <v-text-field label="Password" v-model="password" type="password" :rules="[rules.required]" variant="underlined"></v-text-field>
+                </v-col>
+            </v-row>
+            <v-row>
+                <v-col>
+                    <v-text-field label="Aadhaar" v-model="aadhaar" :rules="[rules.required]" variant="underlined"></v-text-field>
+                </v-col>
+                <v-col>
+                    <v-text-field label="PAN" v-model="pan" :rules="[rules.required]" variant="underlined"></v-text-field>
                 </v-col>
             </v-row>
             <v-container class="text-center">

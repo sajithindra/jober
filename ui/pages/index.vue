@@ -1,10 +1,10 @@
 <template>
     <v-row dense >
         <v-col>
-            <intro/>
+            <Intro/>
         </v-col>
         <v-col>
-            <login/>
+            <Login/>
         </v-col>
     </v-row>
 </template>

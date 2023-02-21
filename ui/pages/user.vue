@@ -6,7 +6,6 @@ definePageMeta({
     layout: 'userlayout'
 })
 
-
 </script>
 
 <style scoped>
