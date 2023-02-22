@@ -10,8 +10,8 @@
                 <v-btn @click="signin()" class="text-white font-mono" color="indigo">SignIn</v-btn> 
             </v-container>
             <p class="font-mono text-xs"> still haven't registered ?</p>
-                <v-container style="width:50%;" class="text-center">
-                    <NuxtLink to="/company"><h3 class="text-indigo-600 font-mono" color="white">SignUp</h3></NuxtLink>
+                <v-container style="width:20%;" class="text-center hover:bg-indigo-600">
+                    <NuxtLink to="/company"><h3 class="text-rose-700 font-mono " color="white">SignUp</h3></NuxtLink>
                 </v-container>
         </v-container>
     </v-form>
