@@ -1,9 +1,8 @@
 <template>
-   <v-container style="width: 50%;">
-    
-   </v-container>
+    <v-container>
+        <Companyregister/>
+    </v-container>
 </template>
-
 <script setup>
 
 </script>

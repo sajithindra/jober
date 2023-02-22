@@ -1,6 +1,5 @@
 <template>
-    <Jobsearch/>
-    
+    <jobsearch/>
 </template>
 
 <script setup>

@@ -1,6 +1,6 @@
 <template>
      <v-form>
-            <h2 class="p-5 text-center text-indigo-600 font-sans text-2xl font-bold"> Candidate Registraion</h2>
+            <h2 class="p-5 text-center text-indigo-600 font-mono text-2xl font-bold"> Registraion</h2>
             <v-row >
                 <v-col>
                     <v-text-field label="Full Name" v-model="name" :rules="[rules.required]" variant="underlined"></v-text-field>

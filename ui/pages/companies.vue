@@ -1,13 +1,13 @@
 <template>
-    <div>
-
-    </div>
+    <v-container class="text-center" >
+        <Companysignin/>
+    </v-container>
 </template>
 
 <script setup>
 
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>
