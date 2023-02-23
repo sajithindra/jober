@@ -29,7 +29,7 @@ const cin=ref("")
 let rules = {
     required : (v) => !!v || "required",
     password : (v) => (v.length >= 8 ) || "Minimum 8 Characters are required",
-    mobile : (v) => (v.length == 10  ) || "Mobile number is wrong"
+    mobile : (v) => (v.value.match(/^[789]\d{9}/)) || "Mobile number is wrong"
 }
 const gstnumber=ref("")
 function forward(){

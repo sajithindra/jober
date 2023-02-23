@@ -10,13 +10,16 @@ export default defineNuxtConfig({
         '@element-plus/nuxt',
         '@nuxt/image-edge',
       ],
-      css: ['vuetify/lib/styles/main.sass'],
-      build: {
+    css: ['vuetify/lib/styles/main.sass'],
+    build: {
         transpile: ['vuetify'],
       },
-      vite: {
+    vite: {
         define: {
           'process.env.DEBUG': false,
         },
-      },
+    },
+    image: {
+      dir:'assets/'
+    }
 })

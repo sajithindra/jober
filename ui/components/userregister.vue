@@ -6,15 +6,15 @@
                     <v-text-field label="Full Name" v-model="name" :rules="[rules.required]" variant="underlined"></v-text-field>
                 </v-col>
                 <v-col>
-                    <v-text-field label="Mobile" v-model="mobile" :rules="[rules.required]" variant="underlined"></v-text-field>
+                    <v-text-field label="Mobile" v-model="mobile" :rules="[rules.required,rules.mobile]" variant="underlined"></v-text-field>
                 </v-col>
             </v-row>
             <v-row>
                 <v-col>
-                    <v-text-field label="Email" v-model="email" :rules="[rules.required]" variant="underlined"></v-text-field>
+                    <v-text-field label="Email" v-model="email" :rules="[rules.required,rules.email]" variant="underlined"></v-text-field>
                 </v-col>
                 <v-col>
-                    <v-text-field label="Password" v-model="password" type="password" :rules="[rules.required]" variant="underlined"></v-text-field>
+                    <v-text-field label="Password" v-model="password" type="password" :rules="[rules.required,rules.password]" variant="underlined"></v-text-field>
                 </v-col>
             </v-row>
             <v-row>
@@ -41,7 +41,9 @@ const pan = ref("");
 
 let rules = {
     required: (v) => !!v || "Required",
-    mobile  : (v) => !!v || "Mobile",
+    mobile : (v) => (v.match(/^[789]\d{9}/)) || "Please check mobile number",
+    password : (v) => (v.length >=8) || "Minimum 8 charactors required",
+    email : (v) => (v.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)) || "Please check email"
 }
 async function register() {
     let user = {
