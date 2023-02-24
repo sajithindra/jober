@@ -11,6 +11,7 @@
             <v-text-field label="Password" v-model="password" type="password" :rules="[rules.required,rules.password]" variant="underlined"></v-text-field>
             <v-text-field label="Company Name" variant="underlined" v-model="companyname" :rules="[rules.required,rules.name]"></v-text-field>
             <v-text-field label="CIN" variant="underlined" v-model="cin" :rules="[rules.required]"></v-text-field>
+            <v-text-field label="GSTIN" variant="underlined" v-model="gst" :rules="[rules.required]"></v-text-field>
             <v-container style="width:50%" class="text-center">
                 <v-btn @click="forward()" color="indigo darken-2" class="text-white font-mono">Register</v-btn>
             </v-container>
@@ -26,6 +27,7 @@ const password= ref("")
 const name= ref("")
 const mobile=ref("")
 const cin=ref("")
+const gst=ref("")
 let rules = {
     required : (v) => !!v || "required",
     name : (v) => (v.match(/^[a-zA-Z0-9\. ]+$/)) || "Please check name",
@@ -33,7 +35,6 @@ let rules = {
     email : (v) => (v.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)) || "Please check email",
     mobile : (v) => (v.match(/^[0-9]\d{9}$/)) || "Mobile number is wrong"
 }
-const gstnumber=ref("")
 function forward(){
     console.log("inside forward function")
 }
