@@ -1,12 +1,13 @@
 <template>
-    <v-container>
-        <Companyregister/>
-    </v-container>
+  
 </template>
-<script setup>
 
+<script setup>
+definePageMeta({
+    layout : 'companylayout',
+})
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

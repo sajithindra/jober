@@ -10,7 +10,6 @@
             <v-text-field label="Mobile" variant="underlined" v-model="mobile" :rules="[rules.required,rules.mobile]"></v-text-field>
             <v-text-field label="Password" v-model="password" type="password" :rules="[rules.required,rules.password]" variant="underlined"></v-text-field>
             <v-text-field label="Company Name" variant="underlined" v-model="companyname" :rules="[rules.required,rules.name]"></v-text-field>
-            <v-text-field label="CIN" variant="underlined" v-model="cin" :rules="[rules.required]"></v-text-field>
             <v-text-field label="GSTIN" variant="underlined" v-model="gst" :rules="[rules.required]"></v-text-field>
             <v-container style="width:50%" class="text-center">
                 <v-btn @click="forward()" color="indigo darken-2" class="text-white font-mono">Register</v-btn>
@@ -26,7 +25,6 @@ const email=ref("")
 const password= ref("")
 const name= ref("")
 const mobile=ref("")
-const cin=ref("")
 const gst=ref("")
 let rules = {
     required : (v) => !!v || "required",

@@ -9,6 +9,7 @@ export default defineNuxtConfig({
         '@nuxtjs/tailwindcss',
         '@element-plus/nuxt',
         '@nuxt/image-edge',
+        'nuxt-icon',
       ],
     css: ['vuetify/lib/styles/main.sass'],
     build: {
