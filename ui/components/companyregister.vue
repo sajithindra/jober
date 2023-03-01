@@ -1,5 +1,5 @@
 <template>
-   <v-container style="width:30%">
+   <v-container style="width:50%">
         <v-form > 
             <v-container style="padding: 50px%;">
                 <h3 class="text-indigo-600 font-mono text-center font-extrabold">Enterprise Registration</h3>
@@ -34,7 +34,14 @@ let rules = {
     mobile : (v) => (v.match(/^[0-9]\d{9}$/)) || "Mobile number is wrong"
 }
 function forward(){
-    console.log("inside forward function")
+    let company = {
+        name : this.name.value,
+        email : this.email.value,
+        password : this.password.value,
+        mobile : this.mobile.value,
+        gst : this.gst.value
+    }
+    console.log(company)
 }
 </script>
 

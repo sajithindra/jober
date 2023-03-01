@@ -10,7 +10,7 @@
                 <v-btn @click="signin()" class="text-white font-mono" color="indigo">SignIn</v-btn> 
             </v-container>
             <p class="font-mono text-xs text-center"> still haven't registered ?</p>
-                <v-container style="width:20%;" class="hover:bg-indigo-600 py-2 px-4 rounded">
+                <v-container style="width:50%;" class="py-2 px-4 rounded">
                     <NuxtLink to="/companyreg"><h3 class="text-rose-700 font-mono">SignUp</h3></NuxtLink>
                 </v-container>
         </v-container>
