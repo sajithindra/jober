@@ -17,6 +17,7 @@ class User(BaseModel):
     email : str
     password : str
     created_at : str = datetime.now()
+
 @app.get('/user')
 async def create_user(user : User):
     try :
@@ -40,3 +41,24 @@ async def get_user(email : str):
     except Exception as e:
         print(str(e))
         return False
+
+class CUser(BaseModel):
+    query : dict = {}
+    key : str
+    value : str
+
+@app.put('/user')
+async def change_user(user : Cuser):
+    try: 
+        filter = user.query
+        update = {
+            '$set' : {
+                user.key : user.value
+            }
+        }
+        client.jober.user.update(filter=filter, update = update)
+        return True
+    except Exception as e:
+        print(str(e))
+        return False
+
