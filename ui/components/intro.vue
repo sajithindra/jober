@@ -1,5 +1,5 @@
 <template>
-    <v-container style="width: 70%; margin: 100px;" >
+    <v-container style="width: 75%; ">
         <v-sheet elevation="9" color="indigo darken-2" rounded shaped class="p-6 mt-20">
             <v-container>
                 <h3 elevation="3" class="p3 text-white font-bold text-2xl font-sans">Why choose us ?</h3><br />

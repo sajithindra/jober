@@ -1,5 +1,5 @@
 <template>
-    <v-form class="text-center" style="width: 30%; margin-left: 35%;margin-top: 10%;">
+    <v-form class="text-center" style="width: 50%; margin-left: 25%;margin-top: 10%;">
         <v-container style="padding: 50px%;">
             <h3 class="text-indigo-600 font-mono text-center font-extrabold text-2xl"> Enterprise SignIn</h3>
         </v-container>

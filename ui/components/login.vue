@@ -1,5 +1,5 @@
 <template>
-    <v-container style="width:50%; margin: 100px;">
+    <v-container style="width:75%;">
         <v-form v-model="formValid" class="p-6 ">
             <h1 class="p-4 text-center text-indigo-600 text-3xl font-bold font-mono" > Login </h1>
             <v-text-field label="Username" v-model="username" :rules="[rules.required]" variant="underlined"></v-text-field>

@@ -1,6 +1,6 @@
 <template>
  <v-app app>
-    <v-app-bar bar color="indigo darken-4">
+    <v-app-bar bar color="indigo darken-4" elevation="4">
         <NuxtLink to="/" class="text-white px-10 py-2 text-3xl ml-4 font-bold font-sans "> Jober </NuxtLink>
         <v-spacer></v-spacer>
         <NuxtLink to="/jobs" class="w-20  text-center text-white font-sans p-3 mr-4 hover:bg-blue-600 rounded-lg">Jobs</NuxtLink>
